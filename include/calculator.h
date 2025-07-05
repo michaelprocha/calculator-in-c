@@ -1,6 +1,6 @@
 #ifndef CALCULATOR_H
 #define CALCULATOR_H
 
-//content
+void home_screen();
 
 #endif
