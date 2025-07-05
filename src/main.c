@@ -3,6 +3,6 @@
 
 int main()
 {
-    printf("Initial file\n");
+    home_screen();
     return 0;
 }
