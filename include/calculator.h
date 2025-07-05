@@ -3,7 +3,7 @@
 
 // screens
 void home_screen();
-void addition_screen();
+float addition_screen();
 void subtraction_screen();
 void multiplication_screen();
 void division_screen();

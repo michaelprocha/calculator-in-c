@@ -10,33 +10,35 @@ void home_screen()
     printf("------------- (1)Addition -- (2)Subtraction -- (3)Multiplication -- (4)Division ----------------------\n");
 }
 
-void addition_screen()
+float addition_screen()
 {
-    // number
-    // number
-    
+    float n1;
+    float n2;
+
     printf("--------------------------------------------- Calculator ---------------------------------------------\n");
     printf("------------------------------------------------------------------------------------------------------\n");
     printf("-------------------------------- Enter the first number for operation --------------------------------\n");
-    // scanf
+    scanf("%f", &n1);
     printf("-------------------------------- Enter the second number for operation --------------------------------\n");
-    // scanf
-    
-    // funcao number number
+    scanf("%f", &n2);
+
+    float result = addition(n1, n2);
+
+    return result;
 }
 
 void subtraction_screen()
 {
     // number
     // number
-    
+
     printf("--------------------------------------------- Calculator ---------------------------------------------\n");
     printf("------------------------------------------------------------------------------------------------------\n");
     printf("-------------------------------- Enter the first number for operation --------------------------------\n");
     // scanf
     printf("-------------------------------- Enter the second number for operation --------------------------------\n");
     // scanf
-    
+
     // funcao number number
 }
 
@@ -44,14 +46,14 @@ void multiplication_screen()
 {
     // number
     // number
-    
+
     printf("--------------------------------------------- Calculator ---------------------------------------------\n");
     printf("------------------------------------------------------------------------------------------------------\n");
     printf("-------------------------------- Enter the first number for operation --------------------------------\n");
     // scanf
     printf("-------------------------------- Enter the second number for operation --------------------------------\n");
     // scanf
-    
+
     // funcao number number
 }
 
@@ -59,14 +61,14 @@ void division_screen()
 {
     // number
     // number
-    
+
     printf("--------------------------------------------- Calculator ---------------------------------------------\n");
     printf("------------------------------------------------------------------------------------------------------\n");
     printf("-------------------------------- Enter the first number for operation --------------------------------\n");
     // scanf
     printf("-------------------------------- Enter the second number for operation --------------------------------\n");
     // scanf
-    
+
     // funcao number number
 }
 
@@ -77,5 +79,4 @@ void end_screen()
     printf("-------------------------- Do you want to do another mathematical operation? -------------------------\n");
     printf("------------------------------------------------------------------------------------------------------\n");
     printf("------------------------------------------ (1)Yes -- (2)No -------------------------------------------\n");
-    
 }
