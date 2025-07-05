@@ -27,19 +27,21 @@ float addition_screen()
     return result;
 }
 
-void subtraction_screen()
+float subtraction_screen()
 {
-    // number
-    // number
+    float n1;
+    float n2;
 
     printf("--------------------------------------------- Calculator ---------------------------------------------\n");
     printf("------------------------------------------------------------------------------------------------------\n");
     printf("-------------------------------- Enter the first number for operation --------------------------------\n");
-    // scanf
+    scanf("%f", &n1);
     printf("-------------------------------- Enter the second number for operation --------------------------------\n");
-    // scanf
+    scanf("%f", &n2);
 
-    // funcao number number
+    float result = subtraction(n1, n2);
+
+    return result;
 }
 
 void multiplication_screen()
