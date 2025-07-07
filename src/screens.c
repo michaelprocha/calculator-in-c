@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "../include/calculator.h"
 
-void home_screen()
+void home_screen(void)
 {
     printf("--------------------------------------------- Calculator ---------------------------------------------\n");
     printf("------------------------------------------------------------------------------------------------------\n");
@@ -10,72 +10,79 @@ void home_screen()
     printf("------------- (1)Addition -- (2)Subtraction -- (3)Multiplication -- (4)Division ----------------------\n");
 }
 
-void addition_screen()
+float addition_screen(void)
 {
-    // number
-    // number
-    
+    float n1;
+    float n2;
+
     printf("--------------------------------------------- Calculator ---------------------------------------------\n");
     printf("------------------------------------------------------------------------------------------------------\n");
     printf("-------------------------------- Enter the first number for operation --------------------------------\n");
-    // scanf
+    scanf("%f", &n1);
     printf("-------------------------------- Enter the second number for operation --------------------------------\n");
-    // scanf
-    
-    // funcao number number
+    scanf("%f", &n2);
+
+    float result = addition(n1, n2);
+
+    return result;
 }
 
-void subtraction_screen()
+float subtraction_screen(void)
 {
-    // number
-    // number
-    
+    float n1;
+    float n2;
+
     printf("--------------------------------------------- Calculator ---------------------------------------------\n");
     printf("------------------------------------------------------------------------------------------------------\n");
     printf("-------------------------------- Enter the first number for operation --------------------------------\n");
-    // scanf
+    scanf("%f", &n1);
     printf("-------------------------------- Enter the second number for operation --------------------------------\n");
-    // scanf
-    
-    // funcao number number
+    scanf("%f", &n2);
+
+    float result = subtraction(n1, n2);
+
+    return result;
 }
 
-void multiplication_screen()
+float multiplication_screen(void)
 {
-    // number
-    // number
-    
+    float n1;
+    float n2;
+
     printf("--------------------------------------------- Calculator ---------------------------------------------\n");
     printf("------------------------------------------------------------------------------------------------------\n");
     printf("-------------------------------- Enter the first number for operation --------------------------------\n");
-    // scanf
+    scanf("%f", &n1);
     printf("-------------------------------- Enter the second number for operation --------------------------------\n");
-    // scanf
+    scanf("%f", &n2);
     
-    // funcao number number
+    float result = multiplication(n1, n2);
+
+    return result;
 }
 
-void division_screen()
+float division_screen(void)
 {
-    // number
-    // number
-    
+    float n1;
+    float n2;
+
     printf("--------------------------------------------- Calculator ---------------------------------------------\n");
     printf("------------------------------------------------------------------------------------------------------\n");
     printf("-------------------------------- Enter the first number for operation --------------------------------\n");
-    // scanf
+    scanf("%f", &n1);
     printf("-------------------------------- Enter the second number for operation --------------------------------\n");
-    // scanf
-    
-    // funcao number number
+    scanf("%f", &n2);
+
+    float result = division(n1, n2);
+
+    return result;
 }
 
-void end_screen()
+void end_screen(void)
 {
     printf("--------------------------------------------- Calculator ---------------------------------------------\n");
     printf("------------------------------------------------------------------------------------------------------\n");
     printf("-------------------------- Do you want to do another mathematical operation? -------------------------\n");
     printf("------------------------------------------------------------------------------------------------------\n");
     printf("------------------------------------------ (1)Yes -- (2)No -------------------------------------------\n");
-    
 }
