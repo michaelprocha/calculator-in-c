@@ -44,19 +44,21 @@ float subtraction_screen()
     return result;
 }
 
-void multiplication_screen()
+float multiplication_screen()
 {
-    // number
-    // number
+    float n1;
+    float n2;
 
     printf("--------------------------------------------- Calculator ---------------------------------------------\n");
     printf("------------------------------------------------------------------------------------------------------\n");
     printf("-------------------------------- Enter the first number for operation --------------------------------\n");
-    // scanf
+    float n1;
     printf("-------------------------------- Enter the second number for operation --------------------------------\n");
-    // scanf
+    float n2;
+    
+    float result = multiplication(n1, n2);
 
-    // funcao number number
+    return result;
 }
 
 void division_screen()
