@@ -55,6 +55,7 @@ float multiplication_screen()
     scanf("%f", &n1);
     printf("-------------------------------- Enter the second number for operation --------------------------------\n");
     scanf("%f", &n2);
+    
     float result = multiplication(n1, n2);
 
     return result;
@@ -62,17 +63,19 @@ float multiplication_screen()
 
 float division_screen()
 {
-    // number
-    // number
+    float n1;
+    float n2;
 
     printf("--------------------------------------------- Calculator ---------------------------------------------\n");
     printf("------------------------------------------------------------------------------------------------------\n");
     printf("-------------------------------- Enter the first number for operation --------------------------------\n");
-    // scanf
+    scanf("%f", &n1);
     printf("-------------------------------- Enter the second number for operation --------------------------------\n");
-    // scanf
+    scanf("%f", &n2);
 
-    // funcao number number
+    float result = division(n1, n2);
+
+    return result;
 }
 
 void end_screen()
