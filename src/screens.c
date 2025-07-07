@@ -52,16 +52,15 @@ float multiplication_screen()
     printf("--------------------------------------------- Calculator ---------------------------------------------\n");
     printf("------------------------------------------------------------------------------------------------------\n");
     printf("-------------------------------- Enter the first number for operation --------------------------------\n");
-    float n1;
+    scanf("%f", &n1);
     printf("-------------------------------- Enter the second number for operation --------------------------------\n");
-    float n2;
-    
+    scanf("%f", &n2);
     float result = multiplication(n1, n2);
 
     return result;
 }
 
-void division_screen()
+float division_screen()
 {
     // number
     // number
