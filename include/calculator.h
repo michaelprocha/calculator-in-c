@@ -7,6 +7,7 @@ float addition_screen(void);
 float subtraction_screen(void);
 float multiplication_screen(void);
 float division_screen(void);
+void end_screen(void);
 
 // mathematical operations
 float addition(float n1, float n2);
