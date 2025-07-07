@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "../include/calculator.h"
 
-void home_screen()
+void home_screen(void)
 {
     printf("--------------------------------------------- Calculator ---------------------------------------------\n");
     printf("------------------------------------------------------------------------------------------------------\n");
@@ -10,7 +10,7 @@ void home_screen()
     printf("------------- (1)Addition -- (2)Subtraction -- (3)Multiplication -- (4)Division ----------------------\n");
 }
 
-float addition_screen()
+float addition_screen(void)
 {
     float n1;
     float n2;
@@ -27,7 +27,7 @@ float addition_screen()
     return result;
 }
 
-float subtraction_screen()
+float subtraction_screen(void)
 {
     float n1;
     float n2;
@@ -44,7 +44,7 @@ float subtraction_screen()
     return result;
 }
 
-float multiplication_screen()
+float multiplication_screen(void)
 {
     float n1;
     float n2;
@@ -61,7 +61,7 @@ float multiplication_screen()
     return result;
 }
 
-float division_screen()
+float division_screen(void)
 {
     float n1;
     float n2;
@@ -78,7 +78,7 @@ float division_screen()
     return result;
 }
 
-void end_screen()
+void end_screen(void)
 {
     printf("--------------------------------------------- Calculator ---------------------------------------------\n");
     printf("------------------------------------------------------------------------------------------------------\n");

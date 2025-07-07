@@ -2,11 +2,11 @@
 #define CALCULATOR_H
 
 // screens
-void home_screen();
-float addition_screen();
-float subtraction_screen();
-float multiplication_screen();
-float division_screen();
+void home_screen(void);
+float addition_screen(void);
+float subtraction_screen(void);
+float multiplication_screen(void);
+float division_screen(void);
 
 // mathematical operations
 float addition(float n1, float n2);
