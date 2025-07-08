@@ -21,16 +21,16 @@ int main(void)
             switch (option__operation)
             {
             case 1:
-                result = addition_screen();
+                result_screen(addition_screen());
                 break;
             case 2:
-                result = subtraction_screen();
+                result_screen(subtraction_screen());
                 break;
             case 3:
-                result = multiplication_screen();
+                result_screen(multiplication_screen());
                 break;
             case 4:
-                result = division_screen();
+                result_screen(division_screen());
             }
         } while (option__operation > 4 || option__operation < 1);
 

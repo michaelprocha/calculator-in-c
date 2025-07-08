@@ -55,7 +55,7 @@ float multiplication_screen(void)
     scanf("%f", &n1);
     printf("-------------------------------- Enter the second number for operation --------------------------------\n");
     scanf("%f", &n2);
-    
+
     float result = multiplication(n1, n2);
 
     return result;
@@ -76,6 +76,15 @@ float division_screen(void)
     float result = division(n1, n2);
 
     return result;
+}
+
+void result_screen(result)
+{
+    system("cls");
+    system("clear");
+    printf("--------------------------------------------- Calculator ---------------------------------------------\n");
+    printf("------------------------------------------------------------------------------------------------------\n");
+    printf("The result of the mathematical operation is: %.2f\n", result);
 }
 
 void end_screen(void)
