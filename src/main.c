@@ -4,32 +4,44 @@
 int main(void)
 {
     int option__operation;
-    int result;
+    int end_calculator;
+    float result;
 
     do
     {
-        home_screen();
-
-        scanf("%d", option__operation);
-
-        switch (option__operation)
+        do
         {
-        case 1:
-            addition_screen();
-            break;
-        case 2:
-            subtraction_screen();
-            break;
-        case 3:
-            multiplication_screen();
-            break;
-        case 4:
-            division_screen();
-        }
+            home_screen();
 
-        system("cls");
-        system("clear");
-    } while (option__operation > 4 || option__operation < 1);
+            scanf("%d", option__operation);
 
+            system("cls");
+            system("clear");
+
+            switch (option__operation)
+            {
+            case 1:
+                result = addition_screen();
+                break;
+            case 2:
+                result = subtraction_screen();
+                break;
+            case 3:
+                result = multiplication_screen();
+                break;
+            case 4:
+                result = division_screen();
+            }
+        } while (option__operation > 4 || option__operation < 1);
+
+        do
+        {
+            system("cls");
+            system("clear");
+            end_screen();
+            scanf("%d", &end_calculator);
+        } while (end_calculator > 2 || end_calculator < 1);
+
+    } while (end_calculator == 1);
     return 0;
 }
