@@ -5,7 +5,6 @@ int main(void)
 {
     int option__operation;
     int end_calculator;
-    float result;
 
     do
     {
@@ -13,10 +12,7 @@ int main(void)
         {
             home_screen();
 
-            scanf("%d", option__operation);
-
-            system("cls");
-            system("clear");
+            scanf("%d", &option__operation);
 
             switch (option__operation)
             {
@@ -36,8 +32,6 @@ int main(void)
 
         do
         {
-            system("cls");
-            system("clear");
             end_screen();
             scanf("%d", &end_calculator);
         } while (end_calculator > 2 || end_calculator < 1);

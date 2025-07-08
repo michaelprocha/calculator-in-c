@@ -16,6 +16,6 @@ float multiplication(float n1, float n2);
 float division(float n1, float n2);
 
 // result screen
-void result_screen(result);
+void result_screen(float result);
 
 #endif
